@@ -120,6 +120,8 @@ app.delete("/employees/:id", (req, res) => {
   }
 });
 
+// Patch operation?
+
 app.listen(3000, () => {
   console.log("Server is listening on port no 3000");
 });
