@@ -1,0 +1,32 @@
+<div class="col mb-5">
+    <div class="card h-100">
+      <% if (product.rating.rate >= 4 ){ %>
+      <div
+        class="badge bg-dark text-white position-absoulte"
+        style="top: 0.5rem; right: 0.5 rem"
+      >
+        Highest Rated
+      </div>
+      <%}%>
+      <h1><%= product.name %></h1>
+      <img
+        class="card-img-top p-4 img-responsive"
+        style="width: auto; height: 300px; object-fit: cover"
+        src="<%= product.image%>"
+        alt=""
+      />
+  
+      <div class="card-body p-4">
+        <div class="text-center">
+          <h5 class="fw-bolder"><%= product.title %> $<%= product.price %></h5>
+        </div>
+      </div>
+  
+      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+        <div class="text-center">
+          <a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
